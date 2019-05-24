@@ -1,0 +1,58 @@
+.character {
+  
+  &__list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__list-wrapper {
+    background-color: coral;
+  }
+
+  &__name, &__house {
+    text-decoration: none;
+    color: #eee;
+  }
+  
+  &__list-wrapper {
+    height: 310px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+  }
+
+  &__image {
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.icon__house {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: #fff;
+  line-height: 0;
+  font-weight: 700;
+}
+
+.icon__dead {
+  position: absolute;
+  top: 35px;
+  right: 9px;
+  color: #fff;
+}
