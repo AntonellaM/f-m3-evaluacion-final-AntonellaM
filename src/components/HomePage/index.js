@@ -6,14 +6,15 @@ import './style.scss';
 const Homepage = (props) => {
   return (
     <React.Fragment>
-      <header>
-        <h1 className="header">Harry Potter Characters</h1>
-      </header>
-      <main>
+      <header className="header">
+        <h1 className="header__title">Harry Potter Characters</h1>
         <Filters f
           ilters={props.filters}
           handleInputContent={props.handleInputContent}
-        />
+        />  
+      </header>
+      <main>
+        
         <CharacterList
           characters={props.characters}
         />

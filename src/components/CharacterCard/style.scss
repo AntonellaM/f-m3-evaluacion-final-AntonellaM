@@ -17,8 +17,9 @@
     align-items: center;
     text-align: center;
     position: relative;
-    background-color: coral;
+    background-color: rgb(50, 53, 56);
     color: #fff;
+    border-radius: 5px;
   }
 
   &__image {
@@ -35,6 +36,7 @@
     position: absolute;
     bottom: 0;
     padding: 0;
+    background-color: rgb(50, 53, 56);;
   }
   &__data {
     list-style: none;

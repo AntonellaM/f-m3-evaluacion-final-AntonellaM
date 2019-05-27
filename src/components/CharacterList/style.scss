@@ -9,7 +9,6 @@
   }
 
   &__list-wrapper {
-    background-color: coral;
   }
 
   &__name, &__house {
@@ -19,6 +18,7 @@
   
   &__list-wrapper {
     height: 310px;
+    background-color: grey;
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,10 @@
     text-align: center;
     margin: 10px;
     position: relative;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+   
   }
 
   &__image {
@@ -38,6 +42,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 5px 5px 0 0;
   }
 }
 
@@ -55,4 +60,22 @@
   top: 35px;
   right: 9px;
   color: #fff;
+}
+
+.character {
+  &--gryffindor {
+    background-color: #A14B4C;
+  }
+
+  &--ravenclaw {
+    background-color: #647B9A;
+  }
+
+  &--hufflepuff {
+    background-color: #FFD84D;
+  }
+
+  &--slytherin {
+    background-color: #788D85;
+  }
 }
